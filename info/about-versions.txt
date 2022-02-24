@@ -1,5 +1,4 @@
 ? @document-start
-? @version-help
 ==================
 | ABOUT VERSIONS |
 ==================================================================================================================================
@@ -12,4 +11,31 @@
 
 ----------------------------------------------------------------------------------------------------------------------------------
 
-Updated source: https://github.com/william-horn/my-coding-conventions/blob/main/document-conventions/about-versions.txt
+! This is the central updated version
+
+? @document-about
+=====================================
+| What do The Version Numbers Mean? |
+==================================================================================================================================
+
+There are two types of version numbers. One for program files (formatted as v.0.0.0.0) and one for non-program files
+(formatted as v.0.0).
+
+For program files:
+    version: a.b.c.d
+
+        a = new major user-interactive feature(s) added 
+        c = compatibility update 
+        b = existing features enhanced, removed, modified, or optimized
+        d = bug fixes
+
+For non-program files:
+    version: a.b
+
+        a = change in overall context of the document's purpose
+        b = change/addition/removal of descriptive document text
+
+----------------------------------------------------------------------------------------------------------------------------------
+
+~Will
+? @document-end

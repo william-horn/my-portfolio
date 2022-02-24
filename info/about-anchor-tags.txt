@@ -11,7 +11,24 @@
 
 ----------------------------------------------------------------------------------------------------------------------------------
 
-Updated source: https://github.com/william-horn/my-coding-conventions/blob/main/document-conventions/about-anchor-tags.txt
+? @document-about
+=========================
+| What are Anchor Tags? |
+==================================================================================================================================
+
+Anchor tags are denoted by using the syntax '@anchor`. They are not a plugin, nor do they offer any additional technology to a 
+project. These tags are simply just comments that you can leave throughout your program files. 
+
+The primary purpose of these tags is to take advantage of your text editor's search function. Using the search function,
+you can search for a specific tag and quickly locate where some relevant code is within your project. This works best if your 
+text editor's search function also allows you to search across multiple files, such as VSCode does. Doing this allows you to 
+quickly list all possible points of interest when searching for an anchor tag.
+
+There are two types of anchors: inline anchors, and block anchors. Inline anchors look wherever that tag is written in a 
+document on a single line, whereas block anchors do the same thing except it is implied that the tag affects an entire block of 
+code.
+
+----------------------------------------------------------------------------------------------------------------------------------
 
 The typical anchor tags are as follows, but depending on the purpose of the document there may be more or less (there should be
 no space between '@' and the anchor name when searching for it using your text editor):
