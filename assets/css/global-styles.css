@@ -1,0 +1,86 @@
+/*
+    ? @document-start
+    =====================
+    | GLOBAL CSS STYLES |
+    ==================================================================================================================================
+
+    ? @author:                 William J. Horn
+    ? @document-name:          global-styles.css
+    ? @document-created:       02/24/2022
+    ? @document-modified:      02/24/2022
+    ? @document-version:       v1.0.0.0
+
+    ----------------------------------------------------------------------------------------------------------------------------------
+
+    ? @document-about
+    ==================
+    | ABOUT DOCUMENT |
+    ==================================================================================================================================
+
+    Global style sheet that applies all default properties
+
+    ----------------------------------------------------------------------------------------------------------------------------------
+*/
+
+/* ------------------------------ */
+/* CSS Global Declarations: Begin */
+/* ------------------------------ */
+/* @program-init                  */
+/* @css:"global declarations"     */
+/* ------------------------------ */
+
+/* -- Global variables -- */
+:root {
+
+    /* properties used for debugging */
+    --debug-background-color: rgba(0, 0, 0, 0.5);
+    --debug-border: 1px solid red;
+
+    /* color themes */
+    --theme-header-color: #b0daff;
+    --theme-background-text-color: #5488c4;
+    --theme-foreground-text-color: #2b85ca;
+    --theme-text-color: white;
+    --theme-text-shadow: 0 0 10px #657cd9;
+    --theme-link-text-color: #5c2eff;
+    --theme-link-text-hover-color: #7d749d;
+    --theme-navbar-background-color: #def0ff;
+
+    /* font themes */
+    --theme-navbar-font: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* -- Global variables -- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+    /* @debug-on:start"view box" */
+    /* background-color: var(--debug-background-color);
+    border: var(--debug-border);
+    color: white; */
+    /* @debug-on:end */
+}
+
+/* -- Global element properties -- */
+header {
+    background-color: var(--theme-header-color);
+}
+
+a {
+    text-decoration: none;
+    text-decoration: underline;
+    color: var(--theme-link-text-color);
+}
+
+li {
+    list-style: none;
+}
+
+
+/* ---------------------------- */
+/* CSS Global Declarations: End */
+/* ---------------------------- */
+

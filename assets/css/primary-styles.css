@@ -31,13 +31,98 @@
     https://github.com/william-horn/my-coding-conventions/blob/main/document-conventions/about-changelog.txt
 
     ----------------------------------------------------------------------------------------------------------------------------------
-
-    ? @document-todo
-    =================
-    | DOCUMENT TODO |
-    ==================================================================================================================================
-
-    -  
-
-    ----------------------------------------------------------------------------------------------------------------------------------
 */
+
+/* ------------------ */
+/* Main Header Styles */
+/* ------------------ */
+/* @program-main      */
+/* @css:"header"      */
+/* ------------------ */
+
+.header-info-container {
+    padding: 20px;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+/* main profile picture */
+.header-info-container > img {
+    width: 15vw;
+    height: 15vw;
+    margin-right: 20px;
+}
+
+.header-info {
+    flex: 1;
+}
+
+.header-info h1 {
+    color: var(--theme-background-text-color);
+    font-size: 3vw;
+    flex: 1;
+}
+
+.header-about-me {
+    margin-left: 25px;
+    margin-top: 35px;
+    display: flex;
+    flex-direction: column;
+}
+
+.header-about-me h2 {
+    color: var(--theme-foreground-text-color);
+    font-size: 1.8vw;
+}
+
+.header-info p {
+    /* margin-top: 15px; */
+    color: white;
+    text-shadow: var(--theme-text-shadow);
+    font-size: 1.2vw;
+    width: 30%;
+}
+
+.header-navbar {
+    display: flex;
+    height: 60px;
+    padding: 10px;
+    align-items: center;
+    background-color: var(--theme-navbar-background-color);
+}
+
+.header-nav-buttons {
+    display: flex;
+    flex: 0.5;
+}
+
+.header-nav-buttons li {
+    font-size: 25px;
+    flex: 0.2;
+    border-left: 1px solid #41a5fc;
+}
+
+.header-nav-buttons li a {
+    margin-left: 15px;
+    text-align: center;
+    font-family: var(--theme-navbar-font);
+}
+
+.header-nav-buttons li a:hover {
+    color: var(--theme-link-text-hover-color);
+}
+
+/* ----------------------------- */
+/* Main Body "My Skills" Section */
+/* ----------------------------- */
+/* @css:"my skills section"      */
+/* ----------------------------- */
+
+main section {
+    margin: 20px 60px;
+    height: 200px;
+}
+
+
+/* ? @document-end */

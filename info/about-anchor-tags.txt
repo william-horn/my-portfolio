@@ -50,7 +50,7 @@ no space between '@' and the anchor name when searching for it using your text e
 @anchor-help: @ program-init                           ! Locate beginning of the initial setup phase of the program
 @anchor-help: @ program-main                           ! Locate where the main body of your program begins
 @anchor-help: @ marker:"comment"                       ! Points to any arbitrary marker spot in a document
-@anchor-help: @ <file-type>:"comment"                  ! (Similar to @marker) Points to a marker specific to a given file type. (ex. @html:"something") 
+@anchor-help: @ <file-type>:"comment"                  ! (Similar to @marker) Points to a marker specific to a given file type. (ex. @ html:"something") 
 @anchor-help: @ changelog-date:xx/xx/xxxx              ! Points to a specific change log tab for a given date
 @anchor-help: @ changelog-records                      ! Points to the change log repository for a document
 
