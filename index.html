@@ -54,6 +54,7 @@
     <head>
         <!-- @program-init -->
         <title>William J. Horn Portfolio</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./assets/css/global-styles.css">
         <link rel="stylesheet" href="./assets/css/primary-styles.css">
     </head>
@@ -65,8 +66,19 @@
     -->
     <body>
 
-        <!-- @program-main -->
-        <!-- @html:"header" -->
+
+        <!-- heading nav bar -->
+        <nav class="header-navbar">
+            <ul class="flex-list-row">
+                <li><a href=""><strong>About Me</strong></a></li>
+                <li><a href=""><strong>My Skills</strong></a></li>
+                <li><a href=""><strong>Projects</strong></a></li>
+                <li><a href=""><strong>Contact Me</strong></a></li>
+                <li><a href=""><strong>Resume</strong></a></li>
+            </ul>
+        </nav>
+
+        <!-- heading banner -->
         <header>
 
             <!-- main header information -->
@@ -74,46 +86,45 @@
 
                 <!-- main portfolio profile picture -->
                 <img src="./assets/images/portfolio-pfp.png" alt="william's face">
-
-                <!-- additional header information -->
-                <div class="header-info top-border-radius">
-                    <h1 class="main-heading">
-                        My Portfolio | 
-                        <span>William J. Horn</span>
-                    </h1>
-                    <div class="header-about-me top-border-radius">
-                        <h2>About me</h2>
-                        <p>
-                            Hello! My name's Will. I'm a pretty laid back person but I'm hard-working and
-                            incredibly passionate about the quality of my job performance. I enjoy staying productive
-                            with various hobbies that sharpen my career and critical-thinking skills.
-                        </p>
-                    </div>
-                </div>
+                <h1 class="header-title">
+                    My Portfolio
+                    <br/>
+                    <span>William J. Horn</span>
+                </h1>
             </div>
 
-            <!-- heading nav bar -->
-            <nav class="header-navbar">
-            </nav>
         </header>
 
         <main>
 
-            <section>
-                <div>
-                    <h2>My Skills</h2>
-                    <ul>
-                        <li>Something 1</li>
-                        <li>Something 2</li>
-                        <li>Something 3</li>
-                    </ul>
+            <!-- about me section -->
+            <section class="about-me">
+                <h2>About Me</h2>
+                <p>
+                    Hello! My name's Will. I'm a pretty laid back person but I'm hard-working and
+                    incredibly passionate about the quality of any job performance. I enjoy staying productive
+                    with various hobbies that sharpen my career and critical-thinking skills. Such hobbies include
+                    tutoring math, learning how to create music, or jumping down the rabbit hole
+                    of physics!
+                </p>
+                <div class="image-row">
+                    <img class="image-card" src="./assets/images/me-playing-piano.jpg" alt="">
+                    <img class="image-card" src="./assets/images/me-teaching-math.jpg" alt="">
+                    <img class="image-card" src="./assets/images/space.jpg" alt="">
                 </div>
             </section>
 
-            <section>
-                <div>
-                    <h2>My Projects</h2>
-                </div>
+            <section class="my-skills">
+                <h2>My Skills</h2>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse sapiente nam illum, libero nemo dicta 
+                    quo illo commodi, modi labore voluptate rem quas officia ducimus impedit quam consequuntur ut. Quis!
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse sapiente nam illum, libero nemo dicta 
+                    quo illo commodi, modi labore voluptate rem quas officia ducimus impedit quam consequuntur ut. Quis!
+
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse sapiente nam illum, libero nemo dicta 
+                    quo illo commodi, modi labore voluptate rem quas officia ducimus impedit quam consequuntur ut. Quis!
+                </p>
             </section>
 
         </main>

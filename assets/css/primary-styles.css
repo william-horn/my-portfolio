@@ -33,9 +33,32 @@
     ----------------------------------------------------------------------------------------------------------------------------------
 */
 
-.top-border-radius {
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+
+/*  nav bar */
+.flex-list-row {
+    display: flex;
+    height: 50%;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.flex-list-row li {
+    width: 33%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background-color: #2f465f;
+}
+
+.flex-list-row li:nth-child(-n+3) {
+    background-color: #96abbb;
+}
+
+.header-navbar {
+    background-color: #346489;
+    width: 100%;
+    height: 100px;
 }
 
 /* ------------------ */
@@ -47,6 +70,7 @@
 
 .header-info-container {
     display: flex;
+    flex-direction: column;
     justify-content: flex-start;
     align-items: center;
     padding: 15px 0 15px 0;
@@ -55,10 +79,8 @@
 }
 
 /* main profile picture */
-.header-info-container > img {
-    width: 15vw;
-    height: 15vw;
-
+.header-info-container img {
+    width: 80%;
     padding: 10px;
     border-radius: 10px;
     border: 5px solid var(--theme-navbar-background-color);
@@ -67,20 +89,19 @@
     box-shadow: 0 0 10px black;
 }
 
-.header-info {
-    height: 15vw;
+.header-info-container h1 {
+    color: var(--theme-text-color);
 }
 
-.main-heading {
-    font-size: 2vw;
+.header-title {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 35px;
 }
 
-.header-about-me h2 {
-    font-size: 1.2vw;
-}
-
-.header-about-me p {
-    font-size: 1vw;
+.header-title span {
+    color: var(--theme-secondary-text-color);
+    font-size: 24px;
 }
 
 
@@ -90,10 +111,26 @@
 /* @css:"my skills section"      */
 /* ----------------------------- */
 
-main section {
-    margin: 20px 60px;
-    height: 200px;
+.image-card {
+    border-radius: 10px;
+    border: 5px solid var(--theme-navbar-background-color);
+    box-shadow: 0 0 10px black;
 }
+
+.image-row {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.image-row img {
+    width: 20vw;
+    object-fit: cover;
+}
+
+
+
+
 
 
 /* ? @document-end */

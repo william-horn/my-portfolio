@@ -47,8 +47,11 @@
     --theme-navbar-background-color: #def0ff;
     --theme-nested-box-background-color: #a3d0ff;
     --theme-highlighted-text-color: #426987;
+    --theme-alt-button-color: #dcedff;
+    --theme-secondary-text-color: #fffd73;
 
     /* font themes */
+    --theme-secondary-navbar-font: fangsong;
     --theme-navbar-font: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
@@ -68,22 +71,51 @@
 
 /* -- Global element properties -- */
 header {
-    background-color: var(--theme-header-color);
+    /* background-color: var(--theme-header-color); */
+    background-color: #346489;
 }
 
 a {
-    text-decoration: underline;
-    color: var(--theme-link-text-color);
-    font-family: math;
+    text-decoration: none;
+    display: block;
+    width: 100%;
     text-align: center;
+    font-size: 20px;
+    color: white;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 li {
     list-style: none;
 }
 
+p {
+    text-align: center;
+    font-size: 20px;
+}
 
-/* ---------------------------- */
-/* CSS Global Declarations: End */
-/* ---------------------------- */
+
+/* General element pairs */
+main section {
+    padding: 10px 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+main section h2 {
+    color: var(--theme-foreground-text-color);
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+main section:nth-child(even) {
+    color: white;
+    background-color: #346489;
+}
+
+main section:nth-child(even) h2 {
+    color: var(--theme-secondary-text-color);
+    text-decoration: none;
+}
+
 
