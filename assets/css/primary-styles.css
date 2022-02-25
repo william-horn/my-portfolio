@@ -48,15 +48,17 @@
 .header-info-container {
     display: flex;
     justify-content: flex-start;
-    flex-wrap: wrap;
     align-items: center;
+    padding: 15px 0 15px 0;
     width: 60%;
+    margin: 0 auto;
 }
 
 /* main profile picture */
 .header-info-container > img {
     width: 15vw;
     height: 15vw;
+
     padding: 10px;
     border-radius: 10px;
     border: 5px solid var(--theme-navbar-background-color);
@@ -66,62 +68,19 @@
 }
 
 .header-info {
-    flex: 1;
-    margin-left: 10px;
-    background-color: var(--theme-navbar-background-color);
+    height: 15vw;
 }
 
-.header-info h1 {
-    color: var(--theme-background-text-color);
-    font-size: 3vw;
-    text-align: center;
-    flex: 1;
-}
-
-.header-info h1 span {
-    color: #426987;
-}
-
-.header-about-me {
-    background-color: var(--theme-header-color);
-    margin-left: 25px;
-    margin-top: 15px;
-    margin-right: 25px;
-    /* width: 40%; */
-    padding: 15px;
+.main-heading {
+    font-size: 2vw;
 }
 
 .header-about-me h2 {
-    color: var(--theme-background-text-color);
-    font-size: 1.4vw;
-    margin-bottom: 10px;
-    flex: 1;
+    font-size: 1.2vw;
 }
 
-.header-info p {
-    color: white;
-    text-shadow: var(--theme-text-shadow);
+.header-about-me p {
     font-size: 1vw;
-}
-
-.header-navbar {
-    display: flex;
-    height: 60px;
-    align-items: center;
-    background-color: var(--theme-navbar-background-color);
-}
-
-.header-nav-buttons {
-    display: flex;
-    flex: 0.3;
-}
-
-.header-nav-buttons li {
-    font-size: 25px;
-    flex: 1;
-    margin-left: 5px;
-    background-color: black;
-    border-radius: 5px;
 }
 
 

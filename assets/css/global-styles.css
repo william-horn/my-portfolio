@@ -74,6 +74,8 @@ header {
 a {
     text-decoration: underline;
     color: var(--theme-link-text-color);
+    font-family: math;
+    text-align: center;
 }
 
 li {
