@@ -33,6 +33,11 @@
     ----------------------------------------------------------------------------------------------------------------------------------
 */
 
+.top-border-radius {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
 /* ------------------ */
 /* Main Header Styles */
 /* ------------------ */
@@ -41,77 +46,84 @@
 /* ------------------ */
 
 .header-info-container {
-    padding: 20px;
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
+    align-items: center;
+    width: 60%;
 }
 
 /* main profile picture */
 .header-info-container > img {
     width: 15vw;
     height: 15vw;
-    margin-right: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 5px solid var(--theme-navbar-background-color);
+    margin: 10px;
+    /* background-color: #5bacff; */
+    box-shadow: 0 0 10px black;
 }
 
 .header-info {
     flex: 1;
+    margin-left: 10px;
+    background-color: var(--theme-navbar-background-color);
 }
 
 .header-info h1 {
     color: var(--theme-background-text-color);
     font-size: 3vw;
+    text-align: center;
     flex: 1;
 }
 
+.header-info h1 span {
+    color: #426987;
+}
+
 .header-about-me {
+    background-color: var(--theme-header-color);
     margin-left: 25px;
-    margin-top: 35px;
-    display: flex;
-    flex-direction: column;
+    margin-top: 15px;
+    margin-right: 25px;
+    /* width: 40%; */
+    padding: 15px;
 }
 
 .header-about-me h2 {
-    color: var(--theme-foreground-text-color);
-    font-size: 1.8vw;
+    color: var(--theme-background-text-color);
+    font-size: 1.4vw;
+    margin-bottom: 10px;
+    flex: 1;
 }
 
 .header-info p {
-    /* margin-top: 15px; */
     color: white;
     text-shadow: var(--theme-text-shadow);
-    font-size: 1.2vw;
-    width: 30%;
+    font-size: 1vw;
 }
 
 .header-navbar {
     display: flex;
     height: 60px;
-    padding: 10px;
     align-items: center;
     background-color: var(--theme-navbar-background-color);
 }
 
 .header-nav-buttons {
     display: flex;
-    flex: 0.5;
+    flex: 0.3;
 }
 
 .header-nav-buttons li {
     font-size: 25px;
-    flex: 0.2;
-    border-left: 1px solid #41a5fc;
+    flex: 1;
+    margin-left: 5px;
+    background-color: black;
+    border-radius: 5px;
 }
 
-.header-nav-buttons li a {
-    margin-left: 15px;
-    text-align: center;
-    font-family: var(--theme-navbar-font);
-}
-
-.header-nav-buttons li a:hover {
-    color: var(--theme-link-text-hover-color);
-}
 
 /* ----------------------------- */
 /* Main Body "My Skills" Section */

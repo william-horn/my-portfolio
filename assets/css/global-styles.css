@@ -38,13 +38,15 @@
 
     /* color themes */
     --theme-header-color: #b0daff;
-    --theme-background-text-color: #5488c4;
+    --theme-background-text-color: #7da3d0;
     --theme-foreground-text-color: #2b85ca;
     --theme-text-color: white;
     --theme-text-shadow: 0 0 10px #657cd9;
     --theme-link-text-color: #5c2eff;
     --theme-link-text-hover-color: #7d749d;
     --theme-navbar-background-color: #def0ff;
+    --theme-nested-box-background-color: #a3d0ff;
+    --theme-highlighted-text-color: #426987;
 
     /* font themes */
     --theme-navbar-font: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -58,9 +60,9 @@
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 
     /* @debug-on:start"view box" */
-    /* background-color: var(--debug-background-color);
-    border: var(--debug-border);
-    color: white; */
+    /* background-color: var(--debug-background-color); */
+    /* border: var(--debug-border); */
+    /* color: white; */
     /* @debug-on:end */
 }
 
@@ -70,7 +72,6 @@ header {
 }
 
 a {
-    text-decoration: none;
     text-decoration: underline;
     color: var(--theme-link-text-color);
 }
