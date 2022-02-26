@@ -30,6 +30,9 @@ This file is where all of the documented change records are stored.
     -   Portfolio project is complete and the first working version has been submitted. Changes to this project shall be 
         recorded here henceforth.
 
+@changelog-record:log[2.0]
+    -   Changed <div class="project-list"> CHILDREN from <div> to <article> to fit semantics
+
 ----------------------------------------------------------------------------------------------------------------------------------
     
 ? @document-end

@@ -30,6 +30,12 @@ This file is where all of the documented change records are stored.
     -   Portfolio project is complete and the first working version has been submitted. Changes to this project shall be 
         recorded here henceforth.
 
+@changelog-record:log[2.0]
+    -   Adjusted CSS for changelog-record:log[2.0] in changelog_index(html).txt by changing:
+            .my-projects div p {...}
+        to:
+            .project-info-container p, .project-description p {...}
+
 ----------------------------------------------------------------------------------------------------------------------------------
     
 ? @document-end
