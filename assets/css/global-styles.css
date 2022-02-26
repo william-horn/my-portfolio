@@ -38,22 +38,18 @@
     --debug-border: 1px solid red;
 
     /* color themes */
-    --theme-header-color: #b0daff;
-    --theme-background-text-color: #7da3d0;
-    --theme-foreground-text-color: #2b85ca;
-    --theme-text-color: white;
-    --theme-text-shadow: 0 0 10px #657cd9;
-    --theme-link-text-color: #5c2eff;
-    --theme-link-text-hover-color: #7d749d;
-    --theme-navbar-background-color: #def0ff;
-    --theme-nested-box-background-color: #a3d0ff;
-    --theme-highlighted-text-color: #426987;
-    --theme-alt-button-color: #dcedff;
+    --theme-main-background-color: #346489;
+    --theme-2nd-subheading-text-color: #2b85ca;
+    --theme-default-text-color: white;
+    --theme-link-hover-color: white;
+    --theme-image-border-color: #def0ff;
     --theme-secondary-text-color: #fffd73;
 
+    /* text shadows */
+    --theme-nav-bar-hover-text-shadow: 0 0 5px white;
+
     /* font themes */
-    --theme-secondary-navbar-font: fangsong;
-    --theme-navbar-font: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    --theme-navbar-font: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 /* @css:"global element defaults" */
@@ -72,8 +68,7 @@
 }
 
 header {
-    /* background-color: var(--theme-header-color); */
-    background-color: #346489;
+    background-color: var(--theme-main-background-color);
 }
 
 a {
@@ -83,13 +78,8 @@ a {
     text-align: center;
     font-size: 20px;
     color: white;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: var(--theme-navbar-font);
     transition: color 0.5s;
-}
-
-a:hover {
-    color: black;
-    transition: color 0.5;
 }
 
 li {
@@ -115,14 +105,14 @@ main section {
 }
 
 main section h2 {
-    color: var(--theme-foreground-text-color);
+    color: var(--theme-2nd-subheading-text-color);
     margin-bottom: 40px;
     text-align: center;
 }
 
 main section:nth-child(even) {
     color: white;
-    background-color: #346489;
+    background-color: var(--theme-main-background-color);
 }
 
 main section:nth-child(even) h2 {

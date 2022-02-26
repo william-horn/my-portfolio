@@ -6,7 +6,7 @@
 ? @author:                 William J. Horn
 ? @document-name:          changelog_index(html).txt
 ? @document-created:       02/24/2022
-? @document-modified:      02/24/2022
+? @document-modified:      02/26/2022
 ? @document-version:       1.0
 
 ----------------------------------------------------------------------------------------------------------------------------------
@@ -24,9 +24,11 @@ This file is where all of the documented change records are stored.
 | CHANGE LOG RECORDS |
 ==================================================================================================================================
 ----------------------------------------------------------------------------------------------------------------------------------
-                                                                                                    | @changelog-date:xx/xx/xxxx |
+                                                                                                    | @changelog-date:02/26/2022 |
                                                                                                     ------------------------------
-No records
+@changelog-record:log[1.0]
+    -   Portfolio project is complete and the first working version has been submitted. Changes to this project shall be 
+        recorded here henceforth.
 
 ----------------------------------------------------------------------------------------------------------------------------------
     

@@ -81,6 +81,12 @@
     cursor: pointer;
 }
 
+a:hover {
+    color: var(--theme-link-hover-color);
+    text-shadow: var(--theme-nav-bar-hover-text-shadow);
+    transition: color 0.2s;
+}
+
 /* -------------- */
 /* Main Nav Bar   */
 /* -------------- */
@@ -88,12 +94,13 @@
 /* -------------- */
 
 .navbar-header {
-    background-color: #346489;
+    background-color: var(--theme-main-background-color);
     width: 100%;
     height: 100px;
 }
 
-.flex-list-row li:nth-child(-n+3) {
+/* first three children of the nav bar */
+.flex-list-row li:nth-child(-n + 3) {
     background-color: #96abbb;
 }
 
@@ -120,7 +127,7 @@
     width: 80%;
     padding: 10px;
     border-radius: 10px;
-    border: 5px solid var(--theme-navbar-background-color);
+    border: 5px solid var(--theme-image-border-color);
     margin: 10px;
     /* background-color: #5bacff; */
     box-shadow: 0 0 10px black;
@@ -131,7 +138,7 @@
     margin-top: 10px;
     text-align: center;
     font-size: 35px;
-    color: var(--theme-text-color);
+    color: var(--theme-default-text-color);
 }
 
 /* sub-heading text of main heading (portfolio owner's name) */
@@ -149,7 +156,7 @@
 
 .image-card {
     border-radius: 10px;
-    border: 5px solid var(--theme-navbar-background-color);
+    border: 5px solid var(--theme-image-border-color);
     box-shadow: 0 0 10px black;
 }
 
@@ -165,7 +172,7 @@
     height: 22vw;
     object-fit: cover;
     border-radius: 10px;
-    border: 5px solid var(--theme-navbar-background-color);
+    border: 5px solid var(--theme-image-border-color);
     box-shadow: 0 0 10px black;
 }
 
@@ -183,14 +190,14 @@ main .my-projects {
 
 /* default text properties for My Projects */
 .my-projects div p {
-    color: white;
+    color: var(--theme-default-text-color);
     font-size: 15px;
     text-align: center;
 }
 
 /* primary project banner */
 .project-banner {
-    background-color: #346489;
+    background-color: var(--theme-main-background-color);
     width: 100%;
     height: 350px; 
     display: flex;
@@ -234,7 +241,7 @@ main .my-projects {
 
 /* appearance of all project list items */
 .project-list > div {
-    background-color: #346489;
+    background-color: var(--theme-main-background-color);
     /* border-radius: 20px; */
     height: 250px;
     /* margin-top: 15px; */
@@ -270,16 +277,17 @@ main .my-projects {
 /* -------------------- */
 /* Contact Me Section   */
 /* -------------------  */
-/* @css:"media queries" */
+/* @css:"contact me"    */
 /* -------------------- */
 
-
+/* contact me footer */
 .contact-me {
     width: 100%;
     margin-top: 50px;
-    background-color: #346489;
+    background-color: var(--theme-main-background-color);
 }
 
+/* footer heading */
 .contact-me h2 {
     text-align: center;
     color: white;
@@ -287,8 +295,9 @@ main .my-projects {
     margin-bottom: 40px;
 }
 
+/* set default text and link appearance */
 .contact-me p {
-    color: white;
+    color: var(--theme-default-text-color);
 }
 
 .contact-me a {
@@ -297,6 +306,7 @@ main .my-projects {
     color: #cacaca;
 }
 
+/* color the contact information differently */
 .contact-info p:first-child span {
     color: var(--theme-secondary-text-color);
 }
