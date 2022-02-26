@@ -7,7 +7,7 @@
     ? @author:                 William J. Horn
     ? @document-name:          primary-styles.css
     ? @document-created:       02/24/2022
-    ? @document-modified:      02/24/2022
+    ? @document-modified:      02/26/2022
     ? @document-version:       v1.0.0.0
 
     ----------------------------------------------------------------------------------------------------------------------------------
@@ -74,6 +74,11 @@
     margin-top: 10px;
     margin-bottom: 10px;
     font-size: 20px;
+}
+
+.reset-links {
+    all: unset;
+    cursor: pointer;
 }
 
 /* -------------- */
@@ -171,22 +176,19 @@
 /* @css:"my projects"              */
 /* ------------------------------- */
 
-
+/* remove default padding for My Projects section */
 main .my-projects {
     padding: 0;
 }
 
+/* default text properties for My Projects */
 .my-projects div p {
     color: white;
     font-size: 15px;
     text-align: center;
 }
 
-.project-link-container a {
-    all:unset;
-    cursor: pointer;
-}
-
+/* primary project banner */
 .project-banner {
     background-color: #346489;
     width: 100%;
@@ -218,8 +220,10 @@ main .my-projects {
     height: 20%;
 }
 
+
+/* list of secondary project links */
 .project-list {
-    width: 100%;
+    width: 90%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -228,6 +232,7 @@ main .my-projects {
     margin: 0 auto;
 }
 
+/* appearance of all project list items */
 .project-list > div {
     background-color: #346489;
     /* border-radius: 20px; */
@@ -236,40 +241,101 @@ main .my-projects {
     margin-bottom: 10px;
     width: 100%;
     display: flex;
-    border: 1px solid red;
     justify-content: flex-start;
 }
 
+/* default project image properties */
+.project-list img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* div that controls project images */
+.project-picture {
+    width: 50%;
+    height: 100%;
+    padding:15px;
+}
+
+.project-description {
+    padding: 15px;
+    width: 50%;
+}
+
+.project-description h3 {
+    margin-bottom: 15px;
+}
+
+/* -------------------- */
+/* Contact Me Section   */
+/* -------------------  */
+/* @css:"media queries" */
+/* -------------------- */
 
 
+.contact-me {
+    width: 100%;
+    margin-top: 50px;
+    background-color: #346489;
+}
+
+.contact-me h2 {
+    text-align: center;
+    color: white;
+    font-size: 35px;
+    margin-bottom: 40px;
+}
+
+.contact-me p {
+    color: white;
+}
+
+.contact-me a {
+    cursor: pointer;
+    display: inline;
+    color: #cacaca;
+}
+
+.contact-info p:first-child span {
+    color: var(--theme-secondary-text-color);
+}
+
+.contact-info p:last-child span {
+    color: #7ea0ff;
+}
+
+.contact-info {
+    padding-bottom: 50px;
+}
 
 
+/* ---------------------------------- */
+/* Media Queries for Platform Support */
+/* ---------------------------------- */
+/* @css:"media queries"               */
+/* ---------------------------------- */
 
-
-
-
-
-
-
-
-
-
-
-
-
+/* the min-width value chosen here is an arbitrary value where webpage transition has greatest impact */
+/* when screen grows to 946 pixels, do this... */
 @media screen and (min-width: 945px) {
+
+    /* add left/right margins to main page content for a slimmer feel on a wider screen */
     main {
         margin: 0 15% 0 15%;
     }
 
+    /* add left/right margins to the nav bar in proportion to the <main> content */
     nav .flex-list-row {
         padding: 0 15% 0 15%;
     }
 
+    /* all main section heading text should grow larger */
     main section h2 {
         font-size: 40px;
     }
 
+    /* primary page heading text should grow larger */
     .header-title {
         font-size: 50px;
     }
@@ -278,8 +344,9 @@ main .my-projects {
         font-size: 30px;
     }
 
+    /* project list should slim down */
     .my-projects {
-        width: 60%;
+        width: 80%;
         margin: 0 auto;
     }
 

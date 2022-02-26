@@ -17,7 +17,10 @@
     | ABOUT DOCUMENT |
     ==================================================================================================================================
 
-    A webpage of displaying my portfolio
+    This is a webpage containing a portfolio of my work.
+
+    * This webpage was build with mobile support in mind
+    * This webpage was build with responsiveness in mind
 
     ----------------------------------------------------------------------------------------------------------------------------------
 
@@ -57,8 +60,8 @@
                 <li><a href="#about-me"><strong>About Me</strong></a></li>
                 <li><a href="#my-skills"><strong>My Skills</strong></a></li>
                 <li><a href="#my-projects"><strong>Projects</strong></a></li>
-                <li><a href=""><strong>Contact Me</strong></a></li>
-                <li><a href=""><strong>Resume</strong></a></li>
+                <li><a href="#contact-me"><strong>Contact Me</strong></a></li>
+                <li><a href="https://github.com/william-horn?tab=repositories"><strong>Resume</strong></a></li>
             </ul>
         </nav>
 
@@ -88,8 +91,8 @@
 
             <!-- | "About Me" Page Section | -->
             <!-- @html:"About Me section" -->
-            <section id="about-me" class="about-me">
-                <h2>About Me</h2>
+            <section aria-labelledby="about-me-section" id="about-me" class="about-me">
+                <h2 id="about-me-section">About Me</h2>
                 
                 <p>
                     Hello! My name's Will. I'm a pretty laid back person but I'm hard-working and
@@ -108,8 +111,8 @@
 
             <!-- | "My Skills" Page Section | -->
             <!-- @html:"My Skills section" -->
-            <section id="my-skills" class="my-skills">
-                <h2>My Skills</h2>
+            <section aria-labelledby="my-skills-section" id="my-skills" class="my-skills">
+                <h2 id="my-skills-section">My Skills</h2>
                 <p>As well as being most of my hobbies, here are some skills that I've acquired over the last few years!</p>
 
                 <ul class="flex-list-column">
@@ -131,8 +134,8 @@
 
             <!-- | "My Projects" Page Section | -->
             <!-- @html:"My Projects section" -->
-            <section id="my-projects" class="my-projects">
-                <h2>My Projects</h2>
+            <section aria-labelledby="my-projects-section" id="my-projects" class="my-projects">
+                <h2 id="my-projects-section">My Projects</h2>
                 <p>Here are some projects I've worked on:</p>
 
                 <!-- container for projects -->
@@ -140,31 +143,63 @@
                     <!-- primary project banner -->
                     <div class="project-banner">
                         <div class="project-link-container">
-                            <a href="https://william-horn.github.io/math-tutor-website/">
-                                <img class="image-card" src="./assets/images/math-tutor-website-image.jpg" alt="">
+                            <a class="reset-links" href="https://william-horn.github.io/math-tutor-website/">
+                                <img class="image-card" src="./assets/images/math-tutor-website-image.jpg" alt="screenshot of my math tutoring website">
                             </a>
                         </div>
                         <div class="project-info-container">
                             <h3>Math Tutor Website</h3>
-                            <p>
-                                A private math tutoring website that people can use to contact me or create an appointment
-                            </p>
+                            <p>A private math tutoring website that people can use to contact me or create an appointment</p>
                         </div>
                     </div>
 
-                    <!-- secondary project list -->
+                    <!-- secondary projects list -->
                     <div class="project-list">
                         <div>
+                            <!-- container for image content -->
+                            <div class="project-picture">
+                                <a class="reset-links" href="https://william-horn.github.io/run-buddy-website/">
+                                    <img class="image-card" src="./assets/images/run-buddy-image.jpg" alt="">
+                                </a>
+                            </div>
 
+                            <div class="project-description">
+                                <h3>Run Buddy Website</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.  natus fugit doloribus eos nulla libero? Assumenda numquam repellat officia quo!</p>
+                            </div>
                         </div>
-                        <div>
 
+
+                        <div>
+                            <!-- container for image content -->
+                            <div class="project-picture">
+                                <a class="reset-links" href="https://github.com/william-horn/lua-dynamic-text">
+                                    <img class="image-card" src="./assets/images/myluaproject-github.png" alt="">
+                                </a>
+                            </div>
+
+                            <div class="project-description">
+                                <h3>My Lua Dynamic Text Renderer</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. atus fugit doloribus eos nulla libero? Assumenda numquam repellat officia quo!</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </section>
 
+
         </main>
+
+        <!-- | "Contact Me" Page Section | -->
+        <!-- @html:"Contact Me section" -->
+        <footer id="contact-me" class="contact-me">
+            <h2>Contact Me</h2>
+            <div class="contact-info">
+                <p>Phone number: <span>919-448-4831</span></p>
+                <p>Email: <a>williamjosephhorn@gmail.com</a></p>
+                <p>Discord: <span>Equality#6453</span></p>
+            </div>
+        </footer>
 
     </body>
 </html>
