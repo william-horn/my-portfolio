@@ -27,17 +27,8 @@
     ==================================================================================================================================
 
     * If this program supports changelog records then there should be a 'changelog' folder within the same directory as this program
-    file. Learn more about the changelog system here: 
+    file. Learn more about the changelog system here (or search for '@ changelog-help' (without the space) in your text editor):
     https://github.com/william-horn/my-coding-conventions/blob/main/document-conventions/about-changelog.txt
-
-    ----------------------------------------------------------------------------------------------------------------------------------
-
-    ? @document-todo
-    =================
-    | DOCUMENT TODO |
-    ==================================================================================================================================
-
-    -  
 
     ----------------------------------------------------------------------------------------------------------------------------------
 -->
@@ -46,29 +37,22 @@
 
 <html>
 
-    <!--
-        ==========================
-        ======== METADATA ========
-        ==========================
-    -->
+    <!-- @program-init -->
     <head>
-        <!-- @program-init -->
         <title>William J. Horn Portfolio</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./assets/css/global-styles.css">
         <link rel="stylesheet" href="./assets/css/primary-styles.css">
     </head>
 
-    <!--
-        ==============================
-        ======== HTML CONTENT ========
-        ==============================
-    -->
+    <!-- @program-main -->
     <body>
 
+        <!-- | Main Page Nav Bar | -->
+        <!-- @html:"nav bar" -->
+        <nav class="navbar-header">
 
-        <!-- heading nav bar -->
-        <nav class="header-navbar">
+            <!-- self-reference page links -->
             <ul class="flex-list-row">
                 <li><a href="#about-me"><strong>About Me</strong></a></li>
                 <li><a href="#my-skills"><strong>My Skills</strong></a></li>
@@ -78,30 +62,35 @@
             </ul>
         </nav>
 
-        <!-- heading banner -->
+        <!-- | Main Page Header | -->
+        <!-- @html:"header" -->
         <header>
 
-            <!-- main header information -->
+            <!-- header information -->
             <div class="header-info-container">
 
-                <!-- main portfolio profile picture -->
+                <!-- portfolio profile picture -->
                 <img src="./assets/images/portfolio-pfp.png" alt="william's face">
+
+                <!-- portfolio title and owner name -->
                 <h1 class="header-title">
                     My Portfolio
                     <br/>
                     <span>William J. Horn</span>
                 </h1>
             </div>
-
         </header>
 
 
-        <!-- main webpage content -->
+        <!-- | Main Page Content | -->
+        <!-- @html:"main content" -->
         <main>
 
-            <!-- "About Me" section -->
+            <!-- | "About Me" Page Section | -->
+            <!-- @html:"About Me section" -->
             <section id="about-me" class="about-me">
                 <h2>About Me</h2>
+                
                 <p>
                     Hello! My name's Will. I'm a pretty laid back person but I'm hard-working and
                     incredibly passionate about the quality of any job performance. I enjoy staying productive
@@ -109,19 +98,20 @@
                     tutoring math, learning how to create music, or jumping down the rabbit hole
                     of physics!
                 </p>
+
                 <div class="image-row">
-                    <img class="image-card" src="./assets/images/me-playing-piano.jpg" alt="playing piano">
-                    <img class="image-card" src="./assets/images/me-teaching-math.jpg" alt="teaching math">
-                    <img class="image-card" src="./assets/images/space.jpg" alt="outer space">
+                    <img src="./assets/images/me-playing-piano.jpg" alt="playing piano">
+                    <img src="./assets/images/me-teaching-math.jpg" alt="teaching math">
+                    <img src="./assets/images/space.jpg" alt="outer space">
                 </div>
             </section>
 
-            <!-- "My Skills" section -->
+            <!-- | "My Skills" Page Section | -->
+            <!-- @html:"My Skills section" -->
             <section id="my-skills" class="my-skills">
                 <h2>My Skills</h2>
-                <p>
-                    As well as being most of my hobbies, here are some skills that I've acquired over the last few years!
-                </p>
+                <p>As well as being most of my hobbies, here are some skills that I've acquired over the last few years!</p>
+
                 <ul class="flex-list-column">
                     <li>- Computer Programming in At Least 3 Different Languages</li>
                     <li>- Cooking</li>
@@ -129,30 +119,47 @@
                     <li>- Learning Piano</li>
                     <li>- Making Memes</li>
                 </ul>
+
+                <p>Here are some recent memes I've made:</p>
+
                 <div class="image-row">
-                    <img class="image-card" src="./assets/images/diving.png" alt="an html meme about divs">
-                    <img class="image-card" src="./assets/images/flexmeme.png" alt="drake meme of flexbox and flextape">
-                    <img class="image-card" src="./assets/images/greatness.png" alt="lord of the rings meme about carrying us to victory">
+                    <img src="./assets/images/diving.png" alt="an html meme about divs">
+                    <img src="./assets/images/flexmeme.png" alt="drake meme of flexbox and flextape">
+                    <img src="./assets/images/greatness.png" alt="lord of the rings meme about carrying us to victory">
                 </div>
             </section>
 
-            <!-- "My Projects" section -->
+            <!-- | "My Projects" Page Section | -->
+            <!-- @html:"My Projects section" -->
             <section id="my-projects" class="my-projects">
                 <h2>My Projects</h2>
-                <p>
-                    Here are some projects I've worked on:
-                </p>
-                <div class="project-list">
-                    <div>
-                        <a href="https://william-horn.github.io/math-tutor-website/">
-                            <img class="image-card project-image" src="./assets/images/math-tutor-website-image.jpg" alt="math tutor website">
-                        </a>
-                    </div>
-                    <div>
+                <p>Here are some projects I've worked on:</p>
 
+                <!-- container for projects -->
+                <div>
+                    <!-- primary project banner -->
+                    <div class="project-banner">
+                        <div class="project-link-container">
+                            <a href="https://william-horn.github.io/math-tutor-website/">
+                                <img class="image-card" src="./assets/images/math-tutor-website-image.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="project-info-container">
+                            <h3>Math Tutor Website</h3>
+                            <p>
+                                A private math tutoring website that people can use to contact me or create an appointment
+                            </p>
+                        </div>
                     </div>
-                    <div>
 
+                    <!-- secondary project list -->
+                    <div class="project-list">
+                        <div>
+
+                        </div>
+                        <div>
+
+                        </div>
                     </div>
                 </div>
             </section>

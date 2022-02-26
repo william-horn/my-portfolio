@@ -27,14 +27,20 @@
     ==================================================================================================================================
 
     * If this program supports changelog records then there should be a 'changelog' folder within the same directory as this program
-    file. Learn more about the changelog system here: 
+    file. Learn more about the changelog system here (or search for '@ changelog-help' (without the space) in your text editor):
     https://github.com/william-horn/my-coding-conventions/blob/main/document-conventions/about-changelog.txt
 
     ----------------------------------------------------------------------------------------------------------------------------------
 */
 
+/* -----------------------*/
+/* Utilities              */
+/* ---------------------- */
+/* @program-main          */
+/* @css:"utility classes" */
+/* ---------------------- */
 
-/*  nav bar */
+/* flexbox class to convert <ul> elements into rows */
 .flex-list-row {
     display: flex;
     height: 50%;
@@ -51,10 +57,7 @@
     background-color: #2f465f;
 }
 
-.flex-list-row li:nth-child(-n+3) {
-    background-color: #96abbb;
-}
-
+/* flexbox class to convert <ul> elements into columns */
 .flex-list-column {
     margin-top: 30px;
     display: flex;
@@ -73,20 +76,29 @@
     font-size: 20px;
 }
 
+/* -------------- */
+/* Main Nav Bar   */
+/* -------------- */
+/* @css:"nav bar" */
+/* -------------- */
 
-.header-navbar {
+.navbar-header {
     background-color: #346489;
     width: 100%;
     height: 100px;
 }
 
+.flex-list-row li:nth-child(-n+3) {
+    background-color: #96abbb;
+}
+
 /* ------------------ */
 /* Main Header Styles */
 /* ------------------ */
-/* @program-main      */
 /* @css:"header"      */
 /* ------------------ */
 
+/* main content container of page header */
 .header-info-container {
     display: flex;
     flex-direction: column;
@@ -99,6 +111,7 @@
 
 /* main profile picture */
 .header-info-container img {
+    max-width: 400px;
     width: 80%;
     padding: 10px;
     border-radius: 10px;
@@ -108,16 +121,15 @@
     box-shadow: 0 0 10px black;
 }
 
-.header-info-container h1 {
-    color: var(--theme-text-color);
-}
-
+/* main heading text of webpage */
 .header-title {
     margin-top: 10px;
     text-align: center;
     font-size: 35px;
+    color: var(--theme-text-color);
 }
 
+/* sub-heading text of main heading (portfolio owner's name) */
 .header-title span {
     color: var(--theme-secondary-text-color);
     font-size: 24px;
@@ -145,53 +157,135 @@
 
 .image-row img {
     width: 20vw;
+    height: 22vw;
     object-fit: cover;
+    border-radius: 10px;
+    border: 5px solid var(--theme-navbar-background-color);
+    box-shadow: 0 0 10px black;
+}
+
+
+/* ------------------------------- */
+/* Main Body "My Projects" Section */
+/* ------------------------------- */
+/* @css:"my projects"              */
+/* ------------------------------- */
+
+
+main .my-projects {
+    padding: 0;
+}
+
+.my-projects div p {
+    color: white;
+    font-size: 15px;
+    text-align: center;
+}
+
+.project-link-container a {
+    all:unset;
+    cursor: pointer;
+}
+
+.project-banner {
+    background-color: #346489;
+    width: 100%;
+    height: 350px; 
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+    margin-bottom: 50px;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+
+.project-banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.project-link-container {
+    height: 80%;
+    width: 100%;
+    padding-bottom: 20px;
+    margin: 0 auto;
+}
+
+.project-info-container {
+    height: 20%;
 }
 
 .project-list {
-    width: 80%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    padding: 20px;
+    /* padding: 20px; */
     margin: 0 auto;
-
 }
 
-.project-list div {
+.project-list > div {
     background-color: #346489;
-    border-radius: 20px;
-    height: 20vw;
-    margin-top: 15px;
-    margin-bottom: 25px;
-    width: 90%;
+    /* border-radius: 20px; */
+    height: 250px;
+    /* margin-top: 15px; */
+    margin-bottom: 10px;
+    width: 100%;
     display: flex;
+    border: 1px solid red;
     justify-content: flex-start;
 }
 
-.project-list a {
-    all:unset;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 945px) {
+    main {
+        margin: 0 15% 0 15%;
+    }
+
+    nav .flex-list-row {
+        padding: 0 15% 0 15%;
+    }
+
+    main section h2 {
+        font-size: 40px;
+    }
+
+    .header-title {
+        font-size: 50px;
+    }
+
+    .header-title span {
+        font-size: 30px;
+    }
+
+    .my-projects {
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    .my-projects div > div {
+        border-radius: 20px;
+    }
 }
-
-.project-list div:first-child {
-    width: 100%;
-    height: 30vw;
-}
-
-
-.image-link {
-    width: 100px;
-}
-
-
-
-.project-image {
-    width: 200px;
-    height: 150px;
-    object-fit: cover;
-}
-
-
 
 /* ? @document-end */

@@ -56,32 +56,37 @@ Once the files are established you can start making change records. As mentioned
 to the changelog files. However, they follow a specific format. They are instantiated by writing:
 
 
-    @changelog-record:log[id.version]
+    @ changelog-record:log[id.version]
             -   some description about the change here
 
 
 Here is the above example broken down:
 
 
-    '@changelog-record:log'         - an anchor tag that let's us know we're creating a new change record in the changelog txt file
+    '@ changelog-record:log'        - an anchor tag that let's us know we're creating a new change record in the changelog txt file
     'id.version'                    - the numeric id of the change followed by it's version (a sub-change, or modification to a change)
 
+
+!!!
+    All anchor tags in this document will have a space in between '@ anchor-tag' to not interfere with search results. All anchor
+    tags should be searched for without the space included.
+!!!
 
 Here is an example of how some change records might look within the context of a project. This is what the content inside the 
 changelog files will look like:
 
 ----------------------------------------------------------------------------------------------------------------------------------
-                                                                                                    | @changelog-date:xx/xx/xxxx |
-                                                                                                    ------------------------------
-    @changelog-record:log[1.0]
+                                                                                                   | @ changelog-date:xx/xx/xxxx |
+                                                                                                   -------------------------------
+    @ changelog-record:log[1.0]
             -   changed header of website from X to Y 
             -   updated color scheme
 
-            @changelog-record:log[1.1]
+            @ changelog-record:log[1.1]
                 -   reverted to old color scheme
 
 
-    @changelog-record:log[2.0]
+    @ changelog-record:log[2.0]
         -   changed footer of website from X to Y
 
 
@@ -99,7 +104,7 @@ changelog files will look like:
 
 All of these change records are grouped and sorted by date. The date is displayed at the far right of the delimiter lines.
 
-Notice that the date is prefixed with the anchor tag '@changelog-date:`, this means you can also search for groups of change
+Notice that the date is prefixed with the anchor tag '@ changelog-date:`, this means you can also search for groups of change
 records by date. You will also notice there is an 'OTHER:' and 'TODO:' list below the change records. These lists are optional 
 and should not be visible by default. They exist to write down changes you made that aren't worth creating a change record for.
 Think of "OTHER" and "TODO" as sticky notes.
@@ -109,7 +114,7 @@ Think of "OTHER" and "TODO" as sticky notes.
 
 If you record a change and later make minor adjustments to that change, you can nest changelog records within each other by 
 indenting and writing the new record. This new record's id should stay the same, whereas the second number (the version number)
-should be incremented by one. For example, '@changelog-record:log[1.1]` is written below `@changelog-record:log[1.0]` and is 
+should be incremented by one. For example, '@ changelog-record:log[1.1]` is written below `@ changelog-record:log[1.0]` and is 
 indented.
 
 
@@ -120,7 +125,7 @@ the main program file. However, you may also write these change record comments 
 affects a block of code that you want to track. This is optional, but encouraged when refactoring your own code or working with
 other developers.
 
-You can do this enclosing a block of code within the '@changelog-record:start[id]` and '@changelog-record:end[id]' anchor tags
+You can do this enclosing a block of code within the '@ changelog-record:start[id]` and '@ changelog-record:end[id]' anchor tags
 as a comment. For example:
 
     ----
@@ -129,11 +134,11 @@ as a comment. For example:
 
     var x = 0
 
-    /* @changelog-record:start[1.0] */          <----
+    /* @ changelog-record:start[1.0] */          <----
     while (x < 10) {
         x+=2;
     }
-    /* @changelog-record:end[1.0] */            <----
+    /* @ changelog-record:end[1.0] */            <----
 
     ----
 

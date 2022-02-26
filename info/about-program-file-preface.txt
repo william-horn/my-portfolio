@@ -48,20 +48,20 @@ vvvvvvvvvvvv
 
 
 comment-begin -->
-    ? @document-start
+    ? @ document-start
     =======================
     | ~~DOCUMENT HEADER~~ |
     ==================================================================================================================================
 
-    ? @author:                 William J. Horn
-    ? @document-name:          document-type.extension
-    ? @document-created:       xx/xx/xxxx
-    ? @document-modified:      xx/xx/xxxx
-    ? @document-version:       v0.0.0.0
+    ? @ author:                 William J. Horn
+    ? @ document-name:          document-type.extension
+    ? @ document-created:       xx/xx/xxxx
+    ? @ document-modified:      xx/xx/xxxx
+    ? @ document-version:       v0.0.0.0
 
     ----------------------------------------------------------------------------------------------------------------------------------
 
-    ? @document-about
+    ? @ document-about
     ==================
     | ABOUT DOCUMENT |
     ==================================================================================================================================
@@ -70,7 +70,7 @@ comment-begin -->
 
     ----------------------------------------------------------------------------------------------------------------------------------
 
-    ? @document-api
+    ? @ document-api
     ================
     | DOCUMENT API |
     ==================================================================================================================================
@@ -79,7 +79,7 @@ comment-begin -->
 
     ----------------------------------------------------------------------------------------------------------------------------------
 
-    ? @document-changelog
+    ? @ document-changelog
     ======================
     | DOCUMENT CHANGELOG |
     ==================================================================================================================================
@@ -89,12 +89,12 @@ comment-begin -->
         -   changes made
 
     * If this program supports changelog records then there should be a 'changelog' folder within the same directory as this program
-    file. Learn more about the changelog system here: 
+    file. Learn more about the changelog system here (or search for '@ changelog-help' (without the space) in your text editor):
     https://github.com/william-horn/my-coding-conventions/blob/main/document-conventions/about-changelog.txt
 
     ----------------------------------------------------------------------------------------------------------------------------------
 
-    ? @document-todo
+    ? @ document-todo
     =================
     | DOCUMENT TODO |
     ==================================================================================================================================
