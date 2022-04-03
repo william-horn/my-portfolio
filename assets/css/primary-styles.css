@@ -175,6 +175,10 @@ a:hover {
     box-shadow: 0 0 10px black;
 }
 
+.my-skills ul {
+    padding: 20px;
+}
+
 /* ------------------------------- */
 /* Main Body "My Projects" Section */
 /* ------------------------------- */
@@ -197,8 +201,9 @@ main .my-projects {
 .project-banner {
     background-color: var(--theme-main-background-color);
     width: 100%;
-    height: 350px; 
+    height: 450px; 
     display: flex;
+    border-radius: 15px;
     /* flex-wrap: wrap; */
     flex-direction: column;
     margin-bottom: 50px;
@@ -215,14 +220,15 @@ main .my-projects {
 }
 
 .project-link-container {
-    height: 80%;
+    height: 70%;
     width: 100%;
     padding-bottom: 20px;
     margin: 0 auto;
 }
 
 .project-info-container {
-    height: 20%;
+    height: 30%;
+    overflow-y: scroll;
 }
 
 
@@ -240,7 +246,7 @@ main .my-projects {
 /* target all project list items */
 .project-list > article {
     background-color: var(--theme-main-background-color);
-    /* border-radius: 20px; */
+    border-radius: 15px;
     height: 250px;
     /* margin-top: 15px; */
     margin-bottom: 10px;
